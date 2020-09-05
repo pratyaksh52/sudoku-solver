@@ -5,8 +5,8 @@ A python script that solves any given sudoku puzzle.
 Python must be intalled on your machine.
 
 ## Usage
-1. Type in a sudoku puzzle in ['input.txt'](./input.txt) with blank values as `0`.
-Use 'spaces' to separate the values and go to a new line to separate rows.
+1. Type in a sudoku puzzle in [`input.txt`](./input.txt) with blank values as `0`.
+Use `spaces` to separate the values and go to a new line to separate rows.
 Eg.
 ```
 8 0 0 4 7 3 0 0 0
