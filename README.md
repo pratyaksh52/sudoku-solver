@@ -1,9 +1,12 @@
 # Sudoku Puzzle Solver
 A python script that solves any given sudoku puzzle.
 
+## Pre-requisites
+Python must be intalled on your machine.
+
 ## Usage
-1. Type in a sudoku puzzle in [input.txt](./input.txt) with blank values as `0`.
-Use spaces to separate the values and go to a new line to separate rows.
+1. Type in a sudoku puzzle in ['input.txt'](./input.txt) with blank values as `0`.
+Use 'spaces' to separate the values and go to a new line to separate rows.
 Eg.
 ```
 8 0 0 4 7 3 0 0 0
@@ -16,5 +19,6 @@ Eg.
 0 3 0 2 0 0 7 0 6
 4 0 0 6 0 0 0 2 0
 ```
+Here, `0` are the blank spaces.
 
-Here, `0` are the blank spaces
+2. Run [`run.py`](./run.py) in the terminal/command prompt.
