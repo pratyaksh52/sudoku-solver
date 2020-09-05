@@ -2,7 +2,7 @@
 A python script that solves any given sudoku puzzle.
 
 ## Pre-requisites
-Python must be intalled on your machine.
+Python must be installed on your machine.
 
 ## Usage
 1. Type in a sudoku puzzle in [`input.txt`](./input.txt) with blank values as `0`.
