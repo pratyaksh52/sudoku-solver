@@ -1,9 +1,9 @@
-from solver import *
+from solver import solve_board, print_board
 import os
 
 
 # getting the path of the input file
-THIS_FOLDER = os.path.dirname(os.path.abspath(__file__))
+THIS_FOLDER = os.getcwd()
 my_file = os.path.join(THIS_FOLDER, 'input.txt')
 
 # saving the ocntents of the file in a variable

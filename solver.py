@@ -1,9 +1,14 @@
 # A Sudoku Solver
 
-# function to print a sudoku board.
 def print_board(board):
+    """Function to print a sudoku board in readable format
+
+    Args:
+        board (list): Sudoku board to be printed
+    """
+
     num_of_rows = len(board)        # saving the number of rows to reduce time complexity later
-    num_of_cols = len(board[0])     # saving the number of columns to redice time complexity later
+    num_of_cols = len(board[0])     # saving the number of columns to reduce time complexity later
 
     # Checking if the board is a sudoku board
     if num_of_rows != 9 and num_of_cols != 9:
@@ -43,12 +48,18 @@ def print_board(board):
             print(seperator)
 
 
-# Function to check if a number can be put in a square
-# Returns boolean value
-# arguement 'board' is a 2-d list which has the board itself
-# arguement 'number' is the number which is to be checked
-# arguement 'position' is a tuple where position[0] is the ith row and position[1] is the jth column
+
 def isPossible(board, number, position):
+    """Function to check if a number can be put in a square
+
+    Args:
+        board (list): Sudoku board to be checked on
+        number (int): Number to be checked
+        position (tuple): Position to be checked (i, j)
+
+    Returns:
+        bool: True if number can be put in the given position, false if otherwise
+    """
     
     # checking if the said number exists in its column
     # returns False if it exists
@@ -76,10 +87,16 @@ def isPossible(board, number, position):
     return True
 
 
-# function which looks for the next empty square in a board
-# returns a tuple with co-ordinates of the square
-# retuens None is no empty square is found
+
 def next_empty(board):
+    """Function which looks for the next empty square in the board.
+
+    Args:
+        board (list): The sudoku board
+
+    Returns:
+        tuple: Tuple with co-ordinates of the square, None if no empty squares remains
+    """
 
     for row in range(len(board)):
         for col in range(len(board)):
@@ -87,6 +104,8 @@ def next_empty(board):
                 return (row, col)
     
     return None
+
+
 
 # recursive function which solves an unsolved board
 # makes changes in the input board itself
@@ -130,8 +149,16 @@ def return_solution(board):
 # function which returns a solved sudoku puzzle
 # creates a copy of the board and then passes in into the recursive function to retain original board
 def solve_board(board):
+    """Function which returns a solved board
 
-    # creating a copy of the original board
+    Args:
+        board (list): The sudoku board
+
+    Returns:
+        list: Solved board
+    """
+
+    # creating a copy of the original board to retain the original board
     solution = []
     for i in range(len(board)):
         solution.append([])
